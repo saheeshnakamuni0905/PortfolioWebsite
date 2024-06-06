@@ -20,7 +20,7 @@ const Layout = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav variant="tabs" className="me-auto">
               <Nav.Link href="#home" style={{marginRight: '20px'}}>Home</Nav.Link>
-              <Nav.Link href="#about" style={{marginRight: '20px'}}>About Me</Nav.Link>
+              <Nav.Link href="#timeline" style={{marginRight: '20px'}}>Experience</Nav.Link>
               <Nav.Link href="#projects" style={{marginRight: '20px'}}>Projects</Nav.Link>
               <Nav.Link href="#resume" style={{marginRight: '20px'}}>Resume</Nav.Link>
               <Nav.Link href="#contact" style={{marginRight: '20px'}} onClick={handleShow}>Contact Me</Nav.Link>
