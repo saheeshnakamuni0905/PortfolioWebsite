@@ -1,0 +1,32 @@
+.navbar-nav {
+    margin-left: 55%; 
+  }
+
+  
+  .nav-tabs .nav-link {
+    border: none; /* Remove the underline */
+    color: #000; /* Optional: Set default color for links */
+    white-space: nowrap; 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .nav-tabs .nav-link.active {
+    border: none; /* Remove the underline for active links */
+    color: #007bff; /* Optional: Change the color of the active link */
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem; /* Adjust padding if needed */
+  }
+  
+  .navbar-brand {
+    font-weight: bold; /* Optional: Make brand name bold */
+    margin-left: -50px; /* Remove any left margin */
+    padding-left: 0;
+  }
+  
+  .container-custom {
+    padding-left: 0;
+    padding-right: 0;
+  }
