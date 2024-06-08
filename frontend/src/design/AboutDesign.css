@@ -4,8 +4,6 @@
   background-color: #f8f9fa;
   text-align: left;
   height: 100vh;
-  padding-bottom: 120px;
-  margin-bottom: 200px;
   font-family: 'Inconsolata', monospace;
   position: relative; /* Ensure it is positioned relative */
   z-index: 1; /* Ensure it is above the wave */
@@ -29,7 +27,7 @@
 }
 
 .highlight {
-  color: #007bff;
+  color: #c7edef;
 }
 
 .headline {

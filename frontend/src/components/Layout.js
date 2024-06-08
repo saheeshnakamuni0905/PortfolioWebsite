@@ -29,9 +29,7 @@ const Layout = () => {
               <Nav.Item>
                 <Link to="/projects" className="nav-link">Projects</Link>
               </Nav.Item>
-              <Nav.Item>
-                <Link to="/resume" className="nav-link">Resume</Link>
-              </Nav.Item>
+
               <Nav.Item>
                 <Link to="#" className="nav-link" onClick={handleShow} disableTransition>Contact Me</Link>
               </Nav.Item>

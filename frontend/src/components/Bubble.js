@@ -1,7 +1,7 @@
 import React from 'react';
 import '../design/BubblesDesign.css';
 
-const Bubbles = ({ duration = 1200, colorStart = '#8f44fd', colorEnd = '#ffffff' }) => {
+const Bubbles = ({ duration = 1200, colorStart = '#c7edef', colorEnd = '#ffffff' }) => {
   return (
     <div id="bubbles">
       <div 
