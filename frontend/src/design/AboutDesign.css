@@ -1,62 +1,63 @@
 .hero-section {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-    text-align: left;
-    /* font-family: 'JetBrains Mono', monospace; */
-    font-family: 'Inconsolata', monospace;
-    
+  padding-top: 0%;
+  margin-top: -1%;
+  background-color: #f8f9fa;
+  text-align: left;
+  height: 100vh;
+  padding-bottom: 120px;
+  margin-bottom: 200px;
+  font-family: 'Inconsolata', monospace;
+  position: relative; /* Ensure it is positioned relative */
+  z-index: 1; /* Ensure it is above the wave */
 }
 
 .hero-section::before {
-    content: "<..>";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 200px;
-    color: rgba(0, 0, 0, 0.1); /* Text color with lesser opacity */
-    z-index: -1;
-  }
+  content: "<..>";
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  color: rgba(0, 0, 0, 0.1); 
+}
 
-  
-  .greeting {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bolder;
-  }
-  
-  .highlight {
-    color: #007bff;
-  }
-  
-  .headline {
-    font-size: 72px;
-    font-weight: bold;
-    margin: 20px 0;
-    white-space: nowrap; 
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: 'JetBrains Mono', monospace;
-  }
-  
-  .description {
-    margin-bottom: 30px;
-    font-size: 18px;
-  }
-  
-  .icons img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .buttons .btn {
-    margin-right: 10px;
-    margin-top: 10px;
-  }
-  
-  .illustration {
-    max-width: 90%;
-    padding-left: 100px;
-    margin-left: 100px;
-  }
-  
+.greeting {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  margin-top: 70px;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.headline {
+  font-size: 72px;
+  font-weight: bold;
+  margin: 20px 0;
+  white-space: nowrap; 
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.description {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.buttons .btn {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.illustration {
+  max-width: 90%;
+  padding-left: 100px;
+  margin-left: 100px;
+}

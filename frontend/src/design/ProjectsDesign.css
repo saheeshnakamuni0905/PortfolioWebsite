@@ -1,46 +1,98 @@
 .project-section {
-    margin-top: 30px;
-    padding: 60px 0;
-    background-color: #f8f9fa;
-    font-family: 'Inconsolata', monospace;
-  }
-  
-  .project-card {
-    cursor: pointer;
-    transition: all 0.3s ease;
-    transform-origin: center center;
-    position: relative;
-    /* transition: transform 0.3s ease, z-index 0.3s ease; */
-  }
-  
-  .project-card:hover {
-    /* transform: scale(1.1);
-    z-index: 10; */
-    transform: scale(2) translate(-10%, -10%);
-    z-index: 10;
-  }
-  
-  .project-card img {
-    height: 200px; 
-    width: 100%;
-    object-fit: contain; 
-  }
+  margin-top: 30px;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 35%; /* Ensure enough space at the bottom */
+}
 
-  .project-card .btn-primary {
-    background-color: #007bff;
-    border: none;
-    transition: background-color 0.3s ease-in-out;
-  }
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-  .project-card .btn {
-    margin-top: 10px;
-  }
+.card-checkbox {
+  position: absolute;
+  opacity: 0;
+}
 
-  .project-card:hover img {
-    transform: scale(1.2);
-  }
-  
-  .project-card:hover .card-body {
-    opacity: 1;
-  }
-  
+.card-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.project-card {
+  position: relative;
+  perspective: 1000px;
+  width: 100%;
+  height: 350px;
+  transform-origin: center center;
+  transition: transform 0.6s ease, z-index 0.6s ease;
+}
+
+.project-card .front,
+.project-card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.6s ease;
+}
+
+.project-card .front {
+  transform: rotateY(0deg);
+}
+
+.project-card .back {
+  transform: rotateY(180deg);
+}
+
+.card-checkbox:checked + .card-label .project-card .front {
+  transform: rotateY(180deg);
+}
+
+.card-checkbox:checked + .card-label .project-card .back {
+  transform: rotateY(0deg);
+}
+
+.project-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #3b82f6;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.project-card h4, .project-card p {
+  opacity: 0.6;
+  font-size: 1rem;
+}
+
+.image-container {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import '../design/ProjectsDesign.css';
 
@@ -22,24 +22,42 @@ const Projects = () => {
   return (
     <div className="project-section" id="projects">
       <Container>
-      <Fade direction="up" duration={500} triggerOnce={false}>
-        <h2 className="text-center mb-4">Projects</h2>
-        <Row>
-          {projects.map((project, index) => (
-            <Col md={4} key={index} className="mb-4">
-              <Card className="project-card">
-                <Card.Img variant="top" src={project.image} alt={project.title} />
-                <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                    View on GitHub
-                  </a>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+        <Fade direction="up" duration={500} triggerOnce={false}>
+          <h2 className="text-center mb-4">Projects</h2>
+          <Row>
+            {projects.map((project, index) => (
+              <Col md={6} key={index} className="mb-4">
+                <div className="card-container">
+                  <input type="checkbox" id={`card${index}`} className="card-checkbox" />
+                  <label htmlFor={`card${index}`} className="card-label">
+                    <div className="card project-card">
+                      <div className="front">
+                        <header>
+                          <h2>{project.title}</h2>
+                        </header>
+                        <div className="image-container">
+                          <img src={project.image} alt={project.title} />
+                        </div>
+                        <h3>{project.description}</h3>
+                      </div>
+                      <div className="back">
+                        <header>
+                          <h2>{project.title}</h2>
+                        </header>
+                        <p>
+                          Detailed information about the project.
+                          <br />
+                          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                            View on GitHub
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </Col>
+            ))}
+          </Row>
         </Fade>
       </Container>
     </div>
