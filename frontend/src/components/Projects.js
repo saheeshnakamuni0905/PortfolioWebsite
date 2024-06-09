@@ -46,7 +46,7 @@ const Projects = () => {
                           <h2>{project.title}</h2>
                         </header>
                         <p>
-                          Detailed information about the project.
+                          
                           <br />
                           <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                             View on GitHub
