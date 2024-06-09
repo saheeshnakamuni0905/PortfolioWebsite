@@ -32,7 +32,7 @@ const About = () => {
                 </div>
             </Fade>
           </Col>
-          <Col md={6}>
+          <Col md={6} xs={12} className="illustration-container">
             <Fade direction="right">
                 <Illustration className="illustration" />
             </Fade>

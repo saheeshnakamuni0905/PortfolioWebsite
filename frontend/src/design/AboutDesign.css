@@ -5,18 +5,8 @@
   text-align: left;
   height: 100vh;
   font-family: 'Inconsolata', monospace;
-  position: relative; /* Ensure it is positioned relative */
-  z-index: 1; /* Ensure it is above the wave */
-}
-
-.hero-section::before {
-  content: "<..>";
-  position: absolute;
-  top: 30%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  font-size: 200px;
-  color: rgba(0, 0, 0, 0.1); 
+  position: relative; 
+  z-index: 1; 
 }
 
 .greeting {
@@ -27,7 +17,7 @@
 }
 
 .highlight {
-  color: #c7edef;
+  color: #6c63ff;
 }
 
 .headline {
@@ -56,6 +46,51 @@
 
 .illustration {
   max-width: 90%;
+  margin: 0 auto;
   padding-left: 100px;
   margin-left: 100px;
+}
+
+.illustration-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Query for Smartphones (350px - 365px) */
+@media (max-width: 600px) {
+  .hero-section {
+    text-align: center; 
+  }
+
+  .greeting {
+    font-size: 20px; 
+    margin-top: 20px; 
+  }
+
+  .headline {
+    font-size: 30px; 
+    margin: 10px 0; 
+  }
+
+  .description {
+    font-size: 14px; 
+  }
+
+  .buttons .btn {
+    margin: 5px; 
+  }
+
+  .illustration-container {
+    order: 3; 
+    width: 100%; 
+    margin-top: 20px; 
+  }
+
+  .illustration {
+    display: block; 
+    margin: 0 auto; 
+    width: 110%; 
+    margin-top: -110px; /* Adjust to move the illustration up */
+    margin-bottom: 50%;
+  }
 }

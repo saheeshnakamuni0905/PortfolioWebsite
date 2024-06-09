@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import '../design/ProjectsDesign.css';
+import Animation from './Animation';
 
 const projects = [
   {
@@ -59,6 +60,7 @@ const Projects = () => {
             ))}
           </Row>
         </Fade>
+        <Animation/>
       </Container>
     </div>
   );

@@ -46,8 +46,8 @@ const Animation = () => {
         >
           <defs>
             <linearGradient id="bg">
-              <stop offset="0%" style={{ stopColor: 'rgba(41, 70, 127, 0.06)' }}></stop>
-              <stop offset="100%" style={{ stopColor: 'rgba(53, 127, 242, 0.6)' }}></stop>
+              <stop offset="0%" style={{ stopColor: 'rgba(108, 99, 255, 0.06)' }}></stop>
+              <stop offset="100%" style={{ stopColor: 'rgba(108, 99, 255, 0.6)' }}></stop>
             </linearGradient>
             <path
               id="wave"

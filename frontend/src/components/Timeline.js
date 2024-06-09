@@ -21,7 +21,7 @@ const Timeline = () => {
   const timelineData = [
     {
       type: 'education',
-      heading: 'Education',
+      heading: "Master's",
       title: 'Master of Science in Information Systems',
       subtitle: 'Northeastern University, Boston, MA',
       date: 'Expected May 2025',
@@ -57,6 +57,7 @@ const Timeline = () => {
     },
     {
       type: 'education',
+      heading: "Bachelor's",
       title: 'Bachelor of Engineering in Information Technology',
       subtitle: 'Vasavi College of Engineering, India',
       date: 'July 2021',
