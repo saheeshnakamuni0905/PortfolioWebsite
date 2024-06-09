@@ -26,7 +26,22 @@ const Timeline = () => {
       subtitle: 'Northeastern University, Boston, MA',
       date: 'Expected May 2025',
       info: 'Coursework',
-      description: 'Database Design, Web Design & User Experience (Frontend) , Web Development (Backend)',
+      description: (
+        <>
+          <Typography variant="body1" gutterBottom>
+            Application Engineering and Development
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            Data Management and Database Design
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            Web Development Tools and Methods
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            Web Design and User Experience
+          </Typography>
+        </>
+      ),
     },
     {
       type: 'work',
@@ -62,7 +77,7 @@ const Timeline = () => {
       subtitle: 'Vasavi College of Engineering, India',
       date: 'July 2021',
       info: 'Coursework',
-      description: 'Data Structures and Algorithms, Design and Analysis of Algorithms, Operating Systems',
+      description: 'Data Structures and Algorithms, Design and Analysis of Algorithms, Operating Systems, Computer Networks',
     },
   ];
 
