@@ -93,4 +93,14 @@
     margin-top: -110px; /* Adjust to move the illustration up */
     margin-bottom: 50%;
   }
+
+  .button-container {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dir-control {
+    width: 80%;
+  }
 }

@@ -1,7 +1,13 @@
 import React from 'react';
 import '../design/AboutButtonsDesign.css';
 
-const AboutButton = ({ as: Component, children, filled, secondary, ...rest }) => {
+const AboutButton = ({
+  as: Component = 'button',
+  children,
+  filled = false,
+  secondary = false,
+  ...rest
+}) => {
   return (
     <Component
       className={`dir-control ${secondary ? 'dir-control--secondary' : ''} ${filled ? 'dir-control--filled' : ''}`}
@@ -18,10 +24,6 @@ const AboutButton = ({ as: Component, children, filled, secondary, ...rest }) =>
       <b aria-hidden="true">{children}</b>
     </Component>
   );
-};
-
-AboutButton.defaultProps = {
-  as: 'button'
 };
 
 export default AboutButton;
