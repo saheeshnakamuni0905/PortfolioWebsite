@@ -1,10 +1,12 @@
 .timeline {
   position: relative;
   max-width: 1200px;
+  height: 60vh;
   margin: 0 auto;
   padding: 2rem 0;
   font-family: 'Inconsolata', monospace;
   margin-bottom: 15%;
+  background-color: #f8f9fa;
 }
 
 .timeline::after {
@@ -12,10 +14,11 @@
   position: absolute;
   width: 6px;
   background-color: #7771e8;
-  top: 60px;
-  bottom: 0;
-  left: 50%;
+  top: 100px;
+  bottom: -100px;
+  left: 52%;
   margin-left: -3px;
+  
 }
 
 .timeline-item {

@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 import '../design/AboutDesign.css';
 import { ReactComponent as Illustration } from '../images/proudcoder.svg';
 import AboutButton from './AboutButtons';
-import Animation from './Animation'
+
 
 const About = () => {
   return (
@@ -39,7 +39,6 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-      <Animation/>
     </div>
   );
 };

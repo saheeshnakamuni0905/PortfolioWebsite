@@ -3,7 +3,7 @@
   margin-top: -1%;
   background-color: #f8f9fa;
   text-align: left;
-  height: 100vh;
+  height: 77vh;
   font-family: 'Inconsolata', monospace;
   position: relative; 
   z-index: 1; 
@@ -44,17 +44,20 @@
   margin-top: 10px;
 }
 
-.illustration {
-  max-width: 90%;
-  margin: 0 auto;
-  padding-left: 100px;
-  margin-left: 100px;
+.illustration-container {
+  position: relative;
+  z-index: 3;
 }
 
-.illustration-container {
-  display: flex;
-  justify-content: center;
+.illustration {
+  max-width: 100%; /* Ensure the illustration takes full width */
+  width: 80%; /* Increase this percentage to scale up */
+  height: auto; /* Maintain the aspect ratio */
+  margin: -245px 150px; /* Center it */
+  display: block; /* Ensure proper block-level behavior */
+  padding: 0;
 }
+
 
 /* Media Query for Smartphones (350px - 365px) */
 @media (max-width: 600px) {

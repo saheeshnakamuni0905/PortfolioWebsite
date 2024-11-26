@@ -40,6 +40,12 @@ const Timeline = () => {
           <Typography variant="body1" gutterBottom>
             Web Design and User Experience
           </Typography>
+          <Typography variant="body1" gutterBottom>
+            Program Structures and Algorithms
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            User Experience and Design Testing
+          </Typography>
         </>
       ),
     },

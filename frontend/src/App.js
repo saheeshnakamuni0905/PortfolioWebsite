@@ -8,6 +8,12 @@ import Animation from './components/Animation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './components/Contact'; // Create a Contact component if needed
 import Bubbles from './components/Bubble';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-H52Y782SRR"; 
+
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
@@ -21,10 +27,9 @@ function App() {
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/Testimonials" element={<Testimonials />} /> */}
         </Routes>
-        <footer>
           <Animation />
-        </footer>
       </div>
     </Router>
   );

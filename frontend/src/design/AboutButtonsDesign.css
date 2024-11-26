@@ -40,17 +40,17 @@
 }
 
 .dir-control:hover {
-  --y: -5;
+  --y: -10; /*button  */
   --scale: 1.05;
 }
 
 .dir-control:active {
-  --y: 0;
+  --y: -5;
   --scale: 0.95;
 }
 
 .dir-control span {
-  -webkit-clip-path: var(--clip);
+  -webkit-clip-path: var(--clip); /*-webkit makes sure clipping is compatible with webkit browsers*/
   clip-path: var(--clip);
   bottom: calc(var(--borderWidth) * -1px);
   left: calc(var(--borderWidth) * -1px);
@@ -112,31 +112,26 @@
 }
 
 .dir-control b:nth-of-type(1) {
-  --clip: inset(0 0 100% 0);
+  --clip: inset(0 0 100% 0); /*bottom*/
 }
 
 .dir-control b:nth-of-type(2) {
-  --clip: inset(0 0 0 100%);
+  --clip: inset(0 0 0 100%); /*left*/
 }
 
 .dir-control b:nth-of-type(3) {
-  --clip: inset(100% 0 0 0);
+  --clip: inset(100% 0 0 0); /*top*/
 }
 
 .dir-control b:nth-of-type(4) {
-  --clip: inset(0 100% 0 0);
-}
-
-.dir-control--secondary {
-  --buttonColor: hsl(0, 0%, 100%);
-  --bg: hsl(0, 0%, 5%);
+  --clip: inset(0 100% 0 0);/*right*/
 }
 
 .dir-control--filled {
   --backdrop: #6c63ff;
   --slideColor: hsl(0, 0%, 5%);
   --textColor: hsl(0, 0%, 5%);
-  --bg: #c7edef;
+  --bg: #ffffff;
 }
 
 @media (max-width: 600px) {

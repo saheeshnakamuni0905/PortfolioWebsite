@@ -29,18 +29,19 @@ const Layout = () => {
               <Nav.Item>
                 <Link to="/projects" className="nav-link">Projects</Link>
               </Nav.Item>
+              {/* <Nav.Item>
+                <Link to="/testimonials" className="nav-link">Testimonials</Link>
+              </Nav.Item> */}
 
               <Nav.Item>
                 <Link to="#" className="nav-link" onClick={handleShow} disableTransition>Contact Me</Link>
               </Nav.Item>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Contact Me</Offcanvas.Title>
-        </Offcanvas.Header>
         <Offcanvas.Body>
           <Contact handleClose={handleClose} />
         </Offcanvas.Body>

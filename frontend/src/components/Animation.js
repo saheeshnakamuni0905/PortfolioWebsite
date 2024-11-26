@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import '../design/AnimationDesign.css'
 
 const Animation = () => {
   const waveRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(waveRef.current, 
-      { x: '-50%' }, // Start from left 50% out of view
+      { x: '-20%' }, // Start from left 50% out of view
       {
         x: '0%', // Move to starting position
         repeat: -1,
@@ -100,7 +101,21 @@ const Animation = () => {
           </g>
         </svg>
       </div>
-    </footer>
+      <div className="footer-content">
+  <p>© 2024 Saheeshna Kamuni. All rights reserved.</p>
+  <div className="social-links">
+  <a href="https://github.com/saheeshnakamuni0905" target="_blank" rel="noopener noreferrer">
+      <img src="/images/github.png" alt="Instagram" className="social-icon" />
+    </a>
+    <a href="https://www.linkedin.com/in/saheeshna-kamuni-30a09b62/" target="_blank" rel="noopener noreferrer">
+      <img src="/images/linkedin-logo.png" alt="LinkedIn" className="social-icon" />
+    </a>
+    <a href="mailto:kamuni.s@northeastern.edu" target="_blank" rel="noopener noreferrer">
+      <img src="/images/outlook.png" alt="Outlook" className="social-icon" />
+    </a>
+  </div>
+</div>
+     </footer>
   );
 };
 

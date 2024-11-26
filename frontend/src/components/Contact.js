@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import '../design/ContactDesign.css';
 
 const Contact = ({ handleClose }) => {
   const [formData, setFormData] = useState({
@@ -18,56 +18,62 @@ const Contact = ({ handleClose }) => {
     e.preventDefault();
     emailjs.sendForm('service_jwa8b1h', 'template_d7wzq1f', e.target, 'klg4LshCgMYCvRrNq')
       .then((result) => {
-        console.log(result.text);
         alert('Message sent successfully!');
-        handleClose(); // Close the offcanvas after successful submission
-      }, (error) => {
-        console.log(error.text);
+        handleClose();
+      })
+      .catch((error) => {
         alert('An error occurred, please try again.');
       });
     e.target.reset();
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <Form.Group controlId="formName">
-        <Form.Label>Name</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter your name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-      </Form.Group>
-      <Form.Group controlId="formEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Enter your email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </Form.Group>
-      <Form.Group controlId="formMessage">
-        <Form.Label>Message</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={3}
-          placeholder="Enter your message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Send
-      </Button>
-    </Form>
+    <div className="contact-form-container">
+      <button className="close-button" onClick={handleClose}>&times;</button>
+      <h2 className="contact-title">Contact Me</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group-custom">
+          <label className="form-label" htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="form-input"
+            placeholder="Enter your name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group-custom">
+          <label className="form-label" htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="form-input"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group-custom">
+          <label className="form-label" htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            className="form-input"
+            placeholder="Enter your message"
+            value={formData.message}
+            onChange={handleChange}
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" className="submit-button">Send</button>
+      </form>
+    </div>
   );
 };
 
