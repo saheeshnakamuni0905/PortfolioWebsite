@@ -8,18 +8,6 @@
     background-color: #f8f9fa;
 }
 
-  /* svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
-    transform-origin: bottom;
-    box-sizing: border-box;
-    display: block;
-    pointer-events: none;
-  } */
 
   svg {
     position: absolute;
@@ -38,7 +26,7 @@
   
   footer {
   position: relative; /* Allows the footer to adjust to the content */
-  z-index: 1; /* Ensures it's on top of the waves */
+  z-index: 1; 
   font-family: 'Inconsolata', monospace;
 }
 

@@ -83,20 +83,20 @@
 
 .project-card h2 {
   font-size: 1.5rem;
-  color: black; /* Adjust text color for contrast */
+  color: black; 
 }
 
 .project-card h3 {
-  color: black; /* Adjust text color for contrast */
+  color: black;
   font-size: 1.25rem;
   margin-top: 1rem;
 }
 
 .project-card h4,
 .project-card p {
-  opacity: 0.8; /* Adjust opacity for better readability */
+  opacity: 0.8; 
   font-size: 1rem;
-  color: black; /* Adjust text color for contrast */
+  color: black; 
 }
 
 .image-container {
@@ -114,7 +114,7 @@
   object-fit: contain;
 }
 
-/* Media Query for smaller screens */
+
 @media (max-width: 768px) {
   .project-section {
     padding: 30px 0;
@@ -256,3 +256,132 @@
     margin: 0 auto; /* Center the cards */
   }
 }
+
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  .project-section {
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .project-card {
+    height: 220px; /* Reduced height for small screens */
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .project-card h2 {
+    font-size: 1rem;
+  }
+
+  .project-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .project-card h4,
+  .project-card p {
+    font-size: 0.8rem;
+  }
+
+  .image-container {
+    height: 80px;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .project-section {
+    padding: 25px 0;
+    height: auto;
+  }
+
+  .project-card {
+    height: 250px;
+    margin: 15px auto;
+    width: 85%;
+  }
+
+  .project-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card h4,
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .image-container {
+    height: 100px;
+  }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .project-section {
+    padding: 30px 0;
+    height: 85vh;
+  }
+
+  .project-card {
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  .card-container{
+    margin-bottom: 100%;
+  }
+
+  .project-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card h4,
+  .project-card p {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    height: 120px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .project-section {
+    padding: 40px 0;
+  }
+
+  .project-card {
+    height: 350px;
+    margin: 25px auto;
+    width: 70%;
+  }
+
+  .project-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-card h4,
+  .project-card p {
+    font-size: 1.1rem;
+  }
+
+  .image-container {
+    height: 150px;
+  }
+}
+
+

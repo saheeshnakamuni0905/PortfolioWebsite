@@ -50,16 +50,16 @@
 }
 
 .illustration {
-  max-width: 100%; /* Ensure the illustration takes full width */
-  width: 80%; /* Increase this percentage to scale up */
-  height: auto; /* Maintain the aspect ratio */
-  margin: -245px 150px; /* Center it */
-  display: block; /* Ensure proper block-level behavior */
+  max-width: 100%; 
+  width: 80%; 
+  height: auto; 
+  margin: -245px 150px; 
+  display: block; 
   padding: 0;
 }
 
 
-/* Media Query for Smartphones (350px - 365px) */
+
 @media (max-width: 600px) {
   .hero-section {
     text-align: center; 
@@ -92,9 +92,10 @@
   .illustration {
     display: block; 
     margin: 0 auto; 
-    width: 110%; 
-    margin-top: -110px; /* Adjust to move the illustration up */
-    margin-bottom: 50%;
+    width: 70%; 
+    /* margin-top: 210px;  */
+    margin-bottom: -30%;
+    margin-left: 50px;
   }
 
   .button-container {
@@ -105,5 +106,59 @@
 
   .dir-control {
     width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-section {
+    text-align: center;
+    padding-top: 5%;
+    height: 85vh; /* Adjust height for iPad */
+  }
+
+  .greeting {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+
+  .headline {
+    font-size: 50px; /* Smaller headline for iPad */
+    margin: 15px 0;
+  }
+
+  .description {
+    font-size: 16px; /* Slightly smaller description */
+    margin-bottom: 25px;
+  }
+
+  .buttons .btn {
+    margin: 10px 5px;
+    font-size: 14px; /* Adjust button font size */
+  }
+
+  .illustration-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .illustration {
+    display: block;
+    margin: 0 auto;
+    width: 90%; /* Adjust width for iPad */
+    height: auto;
+    margin-top: -200px; /* Adjust illustration positioning */
+    margin-bottom: 0;
+    top: 150px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .dir-control {
+    width: 70%; /* Adjust width for better alignment */
   }
 }
