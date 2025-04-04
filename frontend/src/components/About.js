@@ -17,7 +17,7 @@ const About = () => {
               <h2 className="greeting">Hi, I am <span className="highlight">Saheeshna Kamuni</span></h2>
               <h1 className="headline">
                 <Typed
-                  strings={['Web Developer', 'Frontend Developer', 'Backend Developer' , 'Java Developer']}
+                  strings={['Fullstack Developer', 'Frontend Developer', 'Backend Developer']}
                   typeSpeed={40}
                   backSpeed={50}
                   loop
